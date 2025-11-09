@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scarlett Lentini-Mojcher | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #c394a4 0%, #6d5d6e 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        h1 {
+            color: #6d5d6e;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        
+        .contact-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-links a {
+            color: #6d5d6e;
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 2px solid #6d5d6e;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+        
+        .contact-links a:hover {
+            background: #6d5d6e;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .about {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            animation: fadeIn 0.7s ease-in;
+        }
+        
+        .section-title {
+            color: #6d5d6e;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 3px solid #c394a4;
+            padding-bottom: 10px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .skill-tag {
+            background: #f0e6ea;
+            color: #6d5d6e;
+            padding: 5px 15px;
+            border-radius: 20px;
+            border: 1px solid #c394a4;
+            font-size: 0.9em;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeIn 0.9s ease-in;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .project-title {
+            color: #6d5d6e;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        .project-date {
+            color: #888;
+            font-size: 0.85em;
+        }
+        
+        .tech-stack {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .tech {
+            background: linear-gradient(135deg, #c394a4, #6d5d6e);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.85em;
+        }
+        
+        .project-description {
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        .project-description li {
+            margin-bottom: 8px;
+            margin-left: 20px;
+        }
+        
+        .project-links {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .project-links a {
+            color: white;
+            background: #6d5d6e;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: all 0.3s;
+        }
+        
+        .project-links a:hover {
+            background: #c394a4;
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 30px;
+            font-size: 0.9em;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Scarlett Lentini-Mojcher</h1>
+            <p class="subtitle">Computer Science & Business Student | Software Developer</p>
+            <div class="contact-links">
+                <a href="mailto:lentinimojcher.s@northeastern.edu">Email</a>
+                <a href="https://github.com/lentinimojcher-s" target="_blank">GitHub</a>
+                <a href="tel:475-731-2866">475-731-2866</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+        </header>
+
+        <section class="about">
+            <h2 class="section-title">About Me</h2>
+            <p>I'm a sophomore at Northeastern University pursuing a dual degree in Computer Science and Business Administration. 
+            I'm passionate about creating elegant software solutions that bridge technical innovation with business needs. 
+            Currently seeking co-op opportunities for January - August 2026 where I can apply my skills in software development and problem-solving.</p>
+            
+            <div class="skills">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">OOP</span>
+                <span class="skill-tag">MVC Architecture</span>
+                <span class="skill-tag">JUnit Testing</span>
+                <span class="skill-tag">Data Analysis</span>
+            </div>
+        </section>
+
+        <div class="projects">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">Klondike Solitaire</h3>
+                    <span class="project-date">Sep - Oct 2025</span>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech">Java</span>
+                    <span class="tech">MVC</span>
+                    <span class="tech">JUnit</span>
+                </div>
+                <ul class="project-description">
+                    <li>Built a fully functional Klondike Solitaire game with three variants using MVC architecture</li>
+                    <li>Implemented comprehensive game logic with move validation and undo functionality</li>
+                    <li>Developed both text-based & GUI interfaces with complete test coverage</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/lentinimojcher-s" target="_blank">View Code</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">Stardrinks</h3>
+                    <span class="project-date">Dec 2024 - May 2025</span>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech">HTML</span>
+                    <span class="tech">CSS</span>
+                    <span class="tech">UX Design</span>
+                </div>
+                <ul class="project-description">
+                    <li>Applied UX principles to design intuitive user flows for rating and browsing items</li>
+                    <li>Structured clear visual hierarchies to highlight ratings and recommendations</li>
+                    <li>Designed interactive rating cards to encourage engagement and exploration</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/lentinimojcher-s" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">Chess Game</h3>
+                    <span class="project-date">Jan - May 2023</span>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech">Java</span>
+                    <span class="tech">OOP</span>
+                    <span class="tech">Algorithms</span>
+                </div>
+                <ul class="project-description">
+                    <li>Designed two-player chess game with all standard rules and piece movements</li>
+                    <li>Applied object-oriented principles to organize classes for pieces and game logic</li>
+                    <li>Developed algorithms for move validation, check detection, and checkmate conditions</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/lentinimojcher-s" target="_blank">View Code</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">OASIS Consulting Projects</h3>
+                    <span class="project-date">Jan - May 2025</span>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech">HTML/CSS</span>
+                    <span class="tech">Git</span>
+                    <span class="tech">Team Collaboration</span>
+                </div>
+                <ul class="project-description">
+                    <li>Designed and styled project interfaces to improve usability and accessibility</li>
+                    <li>Collaborated on client-focused projects using software development best practices</li>
+                    <li>Utilized GitHub for version control and coordinated team contributions</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/lentinimojcher-s" target="_blank">View Work</a>
+                </div>
+            </div>
+        </div>
+
+        <footer id="contact">
+            <p>Let's connect! I'm actively seeking co-op opportunities for January - August 2026</p>
+            <p>© 2025 Scarlett Lentini-Mojcher. Built with passion and code.</p>
+        </footer>
+    </div>
+</body>
+</html>
