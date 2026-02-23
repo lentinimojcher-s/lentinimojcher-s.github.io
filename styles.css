@@ -359,7 +359,7 @@ footer {
 }
 
 /* ---- HEADER WITH NAME (about/projects pages) ---- */
-header:has(.header-name) {
+.header-with-name {
   justify-content: space-between;
 }
 
